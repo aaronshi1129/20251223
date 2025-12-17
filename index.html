@@ -106,36 +106,36 @@
 
         // 共 30 題
         const QUESTIONS = [
-            { level: 1, question: "在童話故事《三隻小豬》中，大野狼是用什麼吹倒了豬大哥的房子？", options: ["電風扇", "吹風機", "嘴巴吹氣", "颱風"], answer: 2 },
-            { level: 2, question: "一般來說，我們過馬路時看到的交通號誌燈，「綠燈」代表什麼意思？", options: ["可以通行", "禁止通行", "請加速通過", "請倒車"], answer: 0 },
-            { level: 3, question: "俗話說「三個臭皮匠」，勝過哪一位歷史人物？", options: ["諸葛亮", "周瑜", "曹操", "劉備"], answer: 0 },
-            { level: 4, question: "請問台灣最高的建築物是哪一棟？", options: ["高雄 85 大樓", "台北 101", "新光摩天大樓", "南山廣場"], answer: 1 },
-            { level: 5, question: "在西遊記中，孫悟空是從哪裡蹦出來的？", options: ["竹子裡", "桃子裡", "石頭裡", "水裡"], answer: 2 },
-            { level: 6, question: "下列哪一種水果含有豐富的維他命C，且切開後呈現星形？", options: ["蘋果", "楊桃", "奇異果", "鳳梨"], answer: 1 },
-            { level: 7, question: "奧林匹克運動會的五環標誌中，不包含下列哪種顏色？", options: ["藍色", "黃色", "紫色", "黑色"], answer: 2 },
-            { level: 8, question: "人體最大的器官是什麼？", options: ["肝臟", "皮膚", "大腸", "肺"], answer: 1 },
-            { level: 9, question: "電腦鍵盤上，複製功能的快捷鍵通常是 Ctrl 加上哪個字母？", options: ["V", "X", "C", "Z"], answer: 2 },
-            { level: 10, question: "貝多芬的《快樂頌》是出自於他的第幾號交響曲？", options: ["第五號", "第六號", "第九號", "第三號"], answer: 2 },
-            { level: 11, question: "請問名畫《蒙娜麗莎》目前收藏於哪一個博物館？", options: ["大英博物館", "羅浮宮", "大都會博物館", "故宮博物院"], answer: 1 },
-            { level: 12, question: "化學元素週期表中，符號「Au」代表什麼金屬？", options: ["銀", "銅", "金", "鋁"], answer: 2 },
-            { level: 13, question: "下列哪一個國家不屬於「金磚五國」(BRICS) 的創始成員？", options: ["巴西", "俄羅斯", "印尼", "中國"], answer: 2 },
-            { level: 14, question: "請問世界上最深的海溝是哪一條？", options: ["馬里亞納海溝", "東加海溝", "日本海溝", "波多黎各海溝"], answer: 0 },
-            { level: 15, question: "卡通《哆啦A夢》中，哆啦A夢原本的身體是什麼顏色？", options: ["藍色", "黃色", "紅色", "綠色"], answer: 1 },
-            { level: 16, question: "著名的童話《白雪公主》中，壞皇后給白雪公主吃的毒蘋果是什麼顏色的？", options: ["一半紅一半綠", "全紅", "全綠", "紫色"], answer: 1 },
-            { level: 17, question: "太陽系中體積最大的行星是哪一顆？", options: ["地球", "土星", "木星", "海王星"], answer: 2 },
-            { level: 18, question: "請問「QR Code」的 QR 是什麼意思的縮寫？", options: ["Quick Response", "Quality Research", "Quiet Room", "Quick Run"], answer: 0 },
-            { level: 19, question: "人體共有幾對染色體？", options: ["21對", "22對", "23對", "24對"], answer: 2 },
-            { level: 20, question: "請問目前世界上已知的最快鳥類（俯衝速度）是？", options: ["鴕鳥", "老鷹", "遊隼", "雨燕"], answer: 2 },
-            { level: 21, question: "在《哈利波特》系列中，哈利波特屬於霍格華茲的哪一個學院？", options: ["史萊哲林", "赫夫帕夫", "雷文克勞", "葛來分多"], answer: 3 },
-            { level: 22, question: "「蝴蝶」小時候的幼蟲我們通常稱為什麼？", options: ["孑孓", "毛毛蟲", "蝌蚪", "蛆"], answer: 1 },
-            { level: 23, question: "籃球比賽中，正式上場的球員一隊有幾個人？", options: ["4人", "5人", "6人", "11人"], answer: 1 },
-            { level: 24, question: "台灣最長的河流是哪一條？", options: ["淡水河", "曾文溪", "濁水溪", "高屏溪"], answer: 2 },
-            { level: 25, question: "請問「圖書館」的英文單字是？", options: ["Laboratory", "Library", "Liberty", "Lavatory"], answer: 1 },
-            { level: 26, question: "蜘蛛通常有幾隻腳？", options: ["6隻", "8隻", "10隻", "12隻"], answer: 1 },
-            { level: 27, question: "標準的鋼琴鍵盤總共有幾個黑白鍵？", options: ["66鍵", "88鍵", "101鍵", "76鍵"], answer: 1 },
-            { level: 28, question: "請問水的冰點（凝固點）是攝氏幾度？", options: ["0度", "100度", "-10度", "4度"], answer: 0 },
-            { level: 29, question: "成語「指鹿為馬」的主角是秦朝的哪一位人物？", options: ["秦始皇", "李斯", "趙高", "項羽"], answer: 2 },
-            { level: 30, question: "日本的首都是哪一個城市？", options: ["大阪", "京都", "東京", "橫濱"], answer: 2 }
+            { level: 1, question: "西松高中目前普遍官方主要使用的英文縮寫為何？", options: ["HSSH", "XSSH", "HSSHS", "XSSHS"], answer: 1 },
+            { level: 2, question: "在圖書館中，書本的書標哪一部分是自己獨有的編號?", options: ["分類號", "作者號", "冊次號", "登錄號"], answer: 3 },
+            { level: 3, question: "西松高中建校至今已幾年？", options: ["57", "58", "59", "60"], answer: 1 },
+            { level: 4, question: "國中生不能把下列哪種書籍借出館外？", options: ["字典", "漫畫", "百科全書", "言情小說"], answer: 1 },
+            { level: 5, question: "本校目前國七所使用的大型互動觸控顯示器（大屏）的品牌為何？", options: ["ViewSonic", "BenQ", "Jector", "Avocor"], answer: 0 },
+            { level: 6, question: "西松高中於哪一年增設高中部，正式從西松國中變成西松高中？", options: ["75", "86", "97", "108"], answer: 1 },
+            { level: 7, question: "在童話故事《三隻小豬》中，大野狼是用什麼吹倒了豬大哥的房子？", options: ["電風扇", "吹風機", "嘴巴吹氣", "颱風"], answer: 2 },
+            { level: 8, question: "以下哪個不是西松高中所設立的處室？", options: ["圖書館", "國際交流處", "實驗研究處", "教務處"], answer: 2 },
+            { level: 9, question: "請問圖書館的館員都很沉默？", options: ["因為在館內不能講話", "因為他們輸不起", "因為他們不想說話", "只是你沒聽到他們說話"], answer: 1 },
+            { level: 10, question: "西松高中圖書館常態編制人力數量為何？", options: ["5人", "6人", "7人", "8人"], answer: 0 },
+            { level: 11, question: "請問圖書館的英文單字是以下哪個字？", options: ["Liberty", "Library", "Lavatory", "Laboratory"], answer: 1 },
+            { level: 12, question: "本校目前國八所使用的大型互動觸控顯示器（大屏）的品牌為何？", options: ["ViewSonic", "BenQ", "Jector", "Avocor"], answer: 0 },
+            { level: 13, question: "目前圖書館資訊組所管理的校園教育載具不包含以下何種？", options: ["Surface Go", "iPad", "ProBook", "這題只有三個選項"], answer: 2 },
+            { level: 14, question: "圖書館一般學生借書可借多久呢？", options: ["7天", "15天", "30天", "60天"], answer: 2 },
+            { level: 15, question: "圖書館一般學生借書可借幾冊書籍呢？", options: ["7冊", "8冊", "9冊", "10冊"], answer: 0 },
+            { level: 16, question: "學校的學生Wi-Fi帳號是下列何者？", options: ["身分證字號", "生日", "學號", "班級座號"], answer: 2 },
+            { level: 17, question: "擔任圖書館的圖書志工或資訊志工可借幾冊書籍呢？", options: ["7冊", "8冊", "9冊", "10冊"], answer: 3 },
+            { level: 18, question: "本校目前國九所使用的大型互動觸控顯示器（大屏）的品牌為何？", options: ["ViewSonic", "BenQ", "Jector", "Avocor"], answer: 1 },
+            { level: 19, question: "以下哪種書籍可以借出館外閱覽？", options: ["輕小說", "班書", "參考書", "當期雜誌"], answer: 0 },
+            { level: 20, question: "學生使用完學校的Surface Go行動載具後，不需要做以下哪個動作？", options: ["登出個人帳號", "重灌電腦", "刪除下載的檔案", "關機"], answer: 1 },
+            { level: 21, question: "學校的電話號碼是幾號？", options: ["2528-6618", "2528-6688", "2528-8866", "2528-6681"], answer: 0 },
+            { level: 22, question: "圖書館在學校的幾樓？", options: ["2F", "3F", "4F", "5F"], answer: 3 },
+            { level: 23, question: "請問圖書館資訊組的正式英文縮寫為何？", options: ["IT Section", "ITT Section", "ICT Section", "ICS Section"], answer: 2 },
+            { level: 24, question: "本校目前高一所使用的大型互動觸控顯示器（大屏）的品牌為何？", options: ["ViewSonic", "BenQ", "Jector", "Avocor"], answer: 0 },
+            { level: 25, question: "現任114學年度圖書館主任為何？", options: ["曹喻涵", "石岡", "林亞婷", "張貽婷"], answer: 3 },
+            { level: 26, question: "本校目前高二所使用的大型互動觸控顯示器（大屏）的品牌為何？", options: ["ViewSonic", "BenQ", "Jector", "Avocor"], answer: 2 },
+            { level: 27, question: "請問下列關於學校的敘述何者正確？", options: ["西松高中以前是西松國中。", "西松高中是松山區唯一的高中。", "西松高中和松山高中位於同一個行政區。", "西松高中是台北市第一志願的高中。"], answer: 0 },
+            { level: 28, question: "請問以下不是本校的特色班級？", options: ["英語資優班", "國際文憑實驗班", "數理資優班", "體育班"], answer: 2 },
+            { level: 29, question: "請問西松高中的校慶是在每年的幾月舉行呢？", options: ["9月", "10月", "11月", "12月"], answer: 2 },
+            { level: 30, question: "本校目前高三所使用的大型互動觸控顯示器（大屏）的品牌為何？", options: ["ViewSonic", "BenQ", "Jector", "Avocor"], answer: 2 }
         ];
 
         // 30 個獎品
@@ -619,4 +619,5 @@
     </script>
 </body>
 </html>
+
 
